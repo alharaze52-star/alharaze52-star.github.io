@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прайс-лист строительных материалов</title>
+  <style>
+    :root {
+      --bg: #050816;
+      --panel: #0c1630;
+      --panel-2: #111d3d;
+      --line: #223458;
+      --text: #f3f6ff;
+      --muted: #8ca0c7;
+      --accent: #2f66ff;
+      --accent-2: #17336b;
+      --good: #6adf9f;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, #040712 0%, #0b1530 100%);
+      line-height: 1.5;
+    }
+
+    a { color: var(--text); text-decoration: none; }
+
+    .wrap {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      background: linear-gradient(90deg, rgba(10,19,42,0.95), rgba(18,31,64,0.95));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3 { margin: 0 0 10px; }
+    h1 { font-size: 32px; }
+    .lead { color: var(--muted); max-width: 900px; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    nav a {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.03);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    section {
+      background: rgba(9,17,35,0.9);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      overflow: hidden;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: var(--accent-2);
+      color: var(--text);
+      font-weight: 700;
+      position: sticky;
+      top: 0;
+    }
+
+    tr:nth-child(even) td {
+      background: rgba(255,255,255,0.02);
+    }
+
+    .price {
+      color: var(--good);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .sub { color: var(--muted); font-size: 13px; margin-top: 8px; }
+
+    @media (max-width: 900px) {
+      table { display: block; overflow-x: auto; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Прайс-лист строительных материалов</h1>
+      <p class="lead">Наглядный каталог по гипсокартону, профилям, сухим смесям, утеплителям, гидроизоляции и другим материалам. Тёмная цветовая схема в чёрно-тёмно-синем стиле.</p>
+      <nav>
+        <a href="#gkl">ГКЛ</a>
+        <a href="#prof">Профили</a>
+        <a href="#mix">Сухие смеси</a>
+        <a href="#warm">Утеплители</a>
+        <a href="#film">Плёнки и изоляция</a>
+        <a href="#other">Прочее</a>
+      </nav>
+    </header>
+
+    <section id="gkl">
+      <h2>Гипсокартон</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Толщина</th>
+            <th>Ед. измер.</th>
+            <th>Цена</th>
+            <th>Количество в полетах</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>«KNAUF» ГКЛ Потолочный</td><td>9,5 мм</td><td>Лист</td><td class="price">2 522</td><td>67</td></tr>
+          <tr><td>«KNAUF» ГКЛ Стеновой</td><td>12,5 мм</td><td>Лист</td><td class="price">2 847</td><td>51</td></tr>
+          <tr><td>«KNAUF» ГКЛ (ВЛАГОСТ.)</td><td>9,5 мм</td><td>Лист</td><td class="price">2 648</td><td>67</td></tr>
+          <tr><td>«KNAUF» ГКЛ (ВЛАГОСТ.)</td><td>12,5 мм</td><td>Лист</td><td class="price">3 203</td><td>51</td></tr>
+          <tr><td>«KNAUF» ГКЛ (Огнеупорный)</td><td>12,5 мм</td><td>Лист</td><td class="price">3 213</td><td>51</td></tr>
+          <tr><td>«Gyprok» ГКЛ Стеновой</td><td>12,5 мм</td><td>Лист</td><td class="price">2 678</td><td>50</td></tr>
+          <tr><td>«Gyprok» ГКЛ (ВЛАГОСТ.)</td><td>9,5 мм</td><td>Лист</td><td class="price">2 415</td><td>66</td></tr>
+          <tr><td>«Gyprok» ГКЛ (ВЛАГОСТ.)</td><td>12,5 мм</td><td>Лист</td><td class="price">3 045</td><td>50</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="prof">
+      <h2>Комплектующие для гипсокартона</h2>
+      <h3>«KNAUF»</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Толщина</th><th>Ед. измер.</th><th>Цена</th><th>В пачке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Профиль потолочный 60×27</td><td>0,6</td><td>шт</td><td class="price">1 777</td><td>12</td></tr>
+          <tr><td>Профиль стоечный 50×50</td><td>0,6</td><td>шт</td><td class="price">2 076</td><td>8</td></tr>
+          <tr><td>Профиль стоечный 75×50</td><td>0,6</td><td>шт</td><td class="price">2 438</td><td>8</td></tr>
+          <tr><td>Профиль стоечный 100×50</td><td>0,6</td><td>шт</td><td class="price">2 718</td><td>8</td></tr>
+          <tr><td>Направляющие 27×28</td><td>0,6</td><td>шт</td><td class="price">1 298</td><td>16</td></tr>
+          <tr><td>Направляющие 50×40</td><td>0,6</td><td>шт</td><td class="price">1 789</td><td>8</td></tr>
+          <tr><td>Направляющие 75×40</td><td>0,6</td><td>шт</td><td class="price">2 104</td><td>8</td></tr>
+          <tr><td>Направляющие 100×40</td><td>0,6</td><td>шт</td><td class="price">2 504</td><td>8</td></tr>
+        </tbody>
+      </table>
+
+      <h3>«ALIMAX»</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Толщина</th><th>Ед. измер.</th><th>Цена</th><th>В пачке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Профиль потолочный 60×27</td><td>0,35</td><td>шт</td><td class="price">586</td><td>12</td></tr>
+          <tr><td>Профиль потолочный 60×27</td><td>0,55</td><td>шт</td><td class="price">916</td><td>12</td></tr>
+          <tr><td>Профиль стоечный 50×50</td><td>0,4</td><td>шт</td><td class="price">792</td><td>12</td></tr>
+          <tr><td>Профиль стоечный 75×50</td><td>0,4</td><td>шт</td><td class="price">907</td><td>12</td></tr>
+          <tr><td>Профиль стоечный 100×50</td><td>0,4</td><td>шт</td><td class="price">1 036</td><td>12</td></tr>
+          <tr><td>Направляющие 27×28</td><td>0,35</td><td>шт</td><td class="price">364</td><td>24</td></tr>
+          <tr><td>Направляющие 27×28</td><td>0,55</td><td>шт</td><td class="price">614</td><td>24</td></tr>
+          <tr><td>Направляющие 50×40</td><td>0,4</td><td>шт</td><td class="price">668</td><td>12</td></tr>
+          <tr><td>Направляющие 75×40</td><td>0,4</td><td>шт</td><td class="price">781</td><td>12</td></tr>
+          <tr><td>Направляющие 100×40</td><td>0,4</td><td>шт</td><td class="price">907</td><td>12</td></tr>
+        </tbody>
+      </table>
+
+      <h3>STYNERGY</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Толщина</th><th>Ед. измер.</th><th>Цена</th><th>В пачке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Профиль потолочный 60×27</td><td>0,35</td><td>шт</td><td class="price">624</td><td>12</td></tr>
+          <tr><td>Направляющие 27×28</td><td>0,35</td><td>шт</td><td class="price">428</td><td>24</td></tr>
+          <tr><td>Профиль потолочный 60×27</td><td>0,4</td><td>шт</td><td class="price">677</td><td>12</td></tr>
+          <tr><td>Направляющие 27×28</td><td>0,4</td><td>шт</td><td class="price">438</td><td>24</td></tr>
+          <tr><td>Профиль стоечный 50×50</td><td>0,4</td><td>шт</td><td class="price">828</td><td>12</td></tr>
+          <tr><td>Профиль стоечный 75×50</td><td>0,4</td><td>шт</td><td class="price">964</td><td>12</td></tr>
+          <tr><td>Профиль стоечный 100×50</td><td>0,4</td><td>шт</td><td class="price">1 093</td><td>12</td></tr>
+          <tr><td>Направляющие 50×40</td><td>0,4</td><td>шт</td><td class="price">699</td><td>12</td></tr>
+          <tr><td>Направляющие 75×40</td><td>0,4</td><td>шт</td><td class="price">828</td><td>12</td></tr>
+          <tr><td>Направляющие 100×40</td><td>0,4</td><td>шт</td><td class="price">964</td><td>12</td></tr>
+          <tr><td>Профиль потолочный 60×27</td><td>0,55</td><td>шт</td><td class="price">961</td><td>12</td></tr>
+          <tr><td>Направляющие 27×28</td><td>0,55</td><td>шт</td><td class="price">662</td><td>24</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Лента, соединители и крепёж</h2>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Размер</th><th>Ед. измер.</th><th>Цена</th><th>В упаковке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Лента ленотерм 30 KNAUF</td><td>30×30</td><td>Рулон</td><td class="price">1 365</td><td>24</td></tr>
+          <tr><td>Лента ленотерм 50 KNAUF</td><td>50×30</td><td>Рулон</td><td class="price">2 310</td><td>12</td></tr>
+          <tr><td>Лента ленотерм 70 KNAUF</td><td>70×30</td><td>Рулон</td><td class="price">3 255</td><td>12</td></tr>
+          <tr><td>Лента ленотерм 95 KNAUF</td><td>95×30</td><td>Рулон</td><td class="price">4 305</td><td>6</td></tr>
+          <tr><td>Лента бумажная KNAUF</td><td>50×50</td><td>Рулон</td><td class="price">998</td><td>20</td></tr>
+          <tr><td>Маячок 6 KNAUF</td><td>6</td><td>шт</td><td class="price">578</td><td>50</td></tr>
+          <tr><td>Тяга 50 см (спица) KNAUF</td><td>50 см</td><td>шт</td><td class="price">105</td><td>100</td></tr>
+          <tr><td>Тяга 100 см (спица) KNAUF</td><td>1 м</td><td>шт</td><td class="price">210</td><td>100</td></tr>
+          <tr><td>Тяга 200 см (спица) KNAUF</td><td>2 м</td><td>шт</td><td class="price">315</td><td>100</td></tr>
+          <tr><td>Соединение одноуровневое (краб) KNAUF</td><td>—</td><td>шт</td><td class="price">200</td><td>50</td></tr>
+          <tr><td>Соединение двухуровневое (бабочка) KNAUF</td><td>—</td><td>шт</td><td class="price">95</td><td>100</td></tr>
+          <tr><td>Соединение профиля (М-образный) KNAUF</td><td>—</td><td>шт</td><td class="price">95</td><td>100</td></tr>
+          <tr><td>Анкерный подвес (якорь) KNAUF</td><td>—</td><td>шт</td><td class="price">158</td><td>100</td></tr>
+          <tr><td>Директорат KNAUF</td><td>—</td><td>пачка</td><td class="price">100</td><td>100</td></tr>
+          <tr><td>Шуруп-саморез прокалыв</td><td>3,9×11</td><td>пачка</td><td class="price">867</td><td>—</td></tr>
+          <tr><td>Шуруп-сверло оцинкованный</td><td>3,9×11</td><td>пачка</td><td class="price">788</td><td>—</td></tr>
+          <tr><td>Шуруп фосфатированный KNAUF</td><td>3,5×2,5</td><td>пачка</td><td class="price">2 835</td><td>—</td></tr>
+          <tr><td>Шуруп фосфатированный KNAUF</td><td>3,5×3,5</td><td>пачка</td><td class="price">3 675</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="mix">
+      <h2>Сухие смеси</h2>
+      <h3>КНАУФ</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th><th>Цена за паллету</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ротбанд (30 кг)</td><td>меш</td><td class="price">2 730</td><td>40</td><td>104 000</td></tr>
+          <tr><td>Ротбанд Паста 18 кг</td><td>ведро</td><td class="price">9 450</td><td>33</td><td>297 000</td></tr>
+          <tr><td>Фуген (25 кг)</td><td>меш</td><td class="price">3 255</td><td>50</td><td>155 000</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Selena CA (Титан)</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th><th>Цена за паллету</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>TYTAN Basic кафельный клей 25 кг</td><td>меш</td><td class="price">2 090</td><td>48</td><td>95 520</td></tr>
+          <tr><td>Титан STANDARD клей плиточный 25 кг</td><td>меш</td><td class="price">2 478</td><td>48</td><td>113 280</td></tr>
+          <tr><td>TYTAN GRES кафельный клей 25 кг (301)</td><td>меш</td><td class="price">2 725</td><td>48</td><td>124 560</td></tr>
+          <tr><td>TYTAN FLEX кафельный клей 25 кг (302)</td><td>меш</td><td class="price">3 948</td><td>48</td><td>180 480</td></tr>
+          <tr><td>TYTAN SUPER FLEX S1 TS55</td><td>меш</td><td class="price">4 982</td><td>48</td><td>227 760</td></tr>
+          <tr><td>TYTAN NIVEL GIPS пол наливной 25 кг</td><td>меш</td><td class="price">3 486</td><td>48</td><td>159 360</td></tr>
+          <tr><td>TYTAN NIVEL 2-20 25 кг</td><td>меш</td><td class="price">4 153</td><td>48</td><td>189 840</td></tr>
+          <tr><td>TYTAN GREY 25 кг</td><td>меш</td><td class="price">1 864</td><td>48</td><td>85 200</td></tr>
+          <tr><td>TYTAN PERLIT 25 кг</td><td>меш</td><td class="price">2 373</td><td>48</td><td>108 480</td></tr>
+          <tr><td>TYTAN GLADZ 25 кг</td><td>меш</td><td class="price">4 148</td><td>48</td><td>189 600</td></tr>
+          <tr><td>TYTAN FINAL 25 кг</td><td>меш</td><td class="price">4 442</td><td>48</td><td>203 040</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Разные сухие смеси</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th><th>Цена за паллету</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Наливной пол (Мастер) 25 кг</td><td>меш</td><td class="price">2 153</td><td>60</td><td>123 000</td></tr>
+          <tr><td>Наливной пол гипсовый Vetonit 4080 20 кг</td><td>меш</td><td class="price">2 258</td><td>54</td><td>116 100</td></tr>
+          <tr><td>Наливной пол цемент Fast Level 20 кг</td><td>меш</td><td class="price">2 478</td><td>54</td><td>127 440</td></tr>
+          <tr><td>Наливной пол Экопол 30 кг гипсовый</td><td>меш</td><td class="price">3 570</td><td>45</td><td>153 000</td></tr>
+          <tr><td>Умелые ручки (кафельный клей) 25 кг</td><td>меш</td><td class="price">1 628</td><td>60</td><td>93 000</td></tr>
+          <tr><td>ВЕТОНИТ гипсовая штукатурка 30 кг</td><td>меш</td><td class="price">2 520</td><td>40</td><td>96 000</td></tr>
+          <tr><td>Гипсополимер гипсовая штукатурка 25 кг</td><td>меш</td><td class="price">1 785</td><td>49</td><td>83 300</td></tr>
+          <tr><td>Каз гипс Г5 20 кг</td><td>меш</td><td class="price">1 050</td><td>60</td><td>60 000</td></tr>
+          <tr><td>Мюнхенская штукатурка BEKO MIX 25 кг</td><td>меш</td><td class="price">1 470</td><td>50</td><td>70 000</td></tr>
+          <tr><td>Известка 25 кг</td><td>меш</td><td class="price">1 995</td><td>50</td><td>95 000</td></tr>
+        </tbody>
+      </table>
+
+      <h3>ALINEX</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th><th>Цена за паллету</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Клей НАШИ «Крепость» 25 кг</td><td>меш</td><td class="price">2 835</td><td>48</td><td>129 600</td></tr>
+          <tr><td>Клей AlinEX SET 300 25 кг</td><td>меш</td><td class="price">3 276</td><td>48</td><td>149 760</td></tr>
+          <tr><td>Клей AlinEX SET 301 25 кг</td><td>меш</td><td class="price">3 649</td><td>48</td><td>166 800</td></tr>
+          <tr><td>Клей AlinEX SET 302 25 кг</td><td>меш</td><td class="price">4 961</td><td>48</td><td>226 800</td></tr>
+          <tr><td>Затирка JOINT 25 кг</td><td>меш</td><td class="price">7 455</td><td>48</td><td>340 800</td></tr>
+          <tr><td>Шпатлевка AlinEX GLATT 25 кг</td><td>меш</td><td class="price">5 717</td><td>49</td><td>266 805</td></tr>
+          <tr><td>Шпатлевка AlinEX GLATT PLUS 25 кг</td><td>меш</td><td class="price">7 114</td><td>49</td><td>331 975</td></tr>
+          <tr><td>Шпатлевка AlinEX FINISH 25 кг</td><td>меш</td><td class="price">6 914</td><td>49</td><td>322 665</td></tr>
+          <tr><td>Грунтовка AlinEX Prime 10 кг</td><td>канистра</td><td class="price">6 668</td><td>—</td><td>—</td></tr>
+          <tr><td>Грунтовка PRIMA 10 кг</td><td>канистра</td><td class="price">4 725</td><td>—</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Шпаклевка готовая суперфинишная</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th><th>Цена за паллету</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Шпатлевка суперфинишная Основит 28 кг</td><td>ведро</td><td class="price">16 065</td><td>24</td><td>367 200</td></tr>
+          <tr><td>Шпатлевка суперфинишная Основит 16 кг</td><td>ведро</td><td class="price">9 765</td><td>33</td><td>306 900</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="warm">
+      <h2>Каменная вата и утеплители</h2>
+      <h3>Каменная вата</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>м² в упаковке</th><th>Толщина</th><th>Цена за упаковку</th><th>Цена за м³</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Изотерм 40×40</td><td>4</td><td>40</td><td class="price">3 623</td><td>21 563</td></tr>
+          <tr><td>Изотерм 80×50</td><td>3,6</td><td>50</td><td class="price">6 668</td><td>35 278</td></tr>
+          <tr><td>Мин плита MakWool LIGHT П-050/50</td><td>3,6</td><td>50</td><td class="price">4 305</td><td>22 778</td></tr>
+          <tr><td>Мин плита MakWool LIGHT П-050/100</td><td>1,8</td><td>100</td><td class="price">4 305</td><td>22 778</td></tr>
+          <tr><td>Мин плита MakWool INSIDE П-070/50</td><td>3,6</td><td>50</td><td class="price">5 775</td><td>30 556</td></tr>
+          <tr><td>Мин плита MakWool VENT П-080/50</td><td>3,6</td><td>50</td><td class="price">6 195</td><td>32 778</td></tr>
+          <tr><td>Мин плита MakWool VENT П-080/100</td><td>1,8</td><td>100</td><td class="price">6 195</td><td>32 778</td></tr>
+          <tr><td>Мин плита MakWool VENT PROF П-100/50</td><td>3,6</td><td>50</td><td class="price">7 455</td><td>39 444</td></tr>
+          <tr><td>Мин плита MakWool VENT PROF П-100/100</td><td>1,8</td><td>100</td><td class="price">7 455</td><td>39 444</td></tr>
+          <tr><td>Мин плита MakWool RUF Optima П-120/50</td><td>3,6</td><td>50</td><td class="price">8 715</td><td>46 111</td></tr>
+          <tr><td>Мин плита MakWool RUF Optima П-120/100</td><td>1,8</td><td>100</td><td class="price">8 715</td><td>46 111</td></tr>
+          <tr><td>Мин плита MakWool RUF П-140/50</td><td>3,6</td><td>50</td><td class="price">9 240</td><td>48 889</td></tr>
+          <tr><td>Мин плита MakWool RUF П-140/100</td><td>1,8</td><td>100</td><td class="price">9 240</td><td>48 889</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Минплита</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Квадратура</th><th>Толщина</th><th>Цена</th><th>В упаковке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Мин плита ISOVER Master теплых крыш</td><td>4,8 м²</td><td>50</td><td class="price">5 513</td><td>12</td></tr>
+          <tr><td>Акустика KNAUF</td><td>12 м²</td><td>5</td><td class="price">11 130</td><td>36</td></tr>
+          <tr><td>ТеплоKNAUF Коттедж</td><td>12 м²</td><td>5</td><td class="price">10 710</td><td>36</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Утеплители в рулонах</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Квадратура</th><th>Толщина</th><th>Цена</th><th>В упаковке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Стекловата Эковер</td><td>12 м²</td><td>5</td><td class="price">4 620</td><td>—</td></tr>
+          <tr><td>Стекловата Эковер зеленая</td><td>12 м²</td><td>5</td><td class="price">4 935</td><td>—</td></tr>
+          <tr><td>Стекловата ISOBOX</td><td>15 м²</td><td>5</td><td class="price">6 615</td><td>42</td></tr>
+          <tr><td>Стекловата Эковер с фольгой</td><td>12 м²</td><td>5</td><td class="price">7 875</td><td>—</td></tr>
+          <tr><td>Стекловата KNAUF INSULATION</td><td>16,6 м²</td><td>5</td><td class="price">8 190</td><td>48</td></tr>
+          <tr><td>IZOVER минвата рулон</td><td>13,4 м²</td><td>5</td><td class="price">7 350</td><td>48</td></tr>
+          <tr><td>IZOVER фольгированная</td><td>15 м²</td><td>5</td><td class="price">15 750</td><td>30</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Утеплители</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Квадратура</th><th>Толщина</th><th>Цена</th><th>Кубатура</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ТЕПЛЕКС</td><td>11,09</td><td>20</td><td class="price">9 870</td><td>1 п = 0,2224</td></tr>
+          <tr><td>ТЕПЛЕКС</td><td>6,93</td><td>30</td><td class="price">7 875</td><td>1 п = 0,208</td></tr>
+          <tr><td>ТЕПЛЕКС</td><td>4,16</td><td>50</td><td class="price">7 560</td><td>1 п = 0,2082</td></tr>
+          <tr><td>Полпан</td><td>10,857</td><td>20</td><td class="price">9 030</td><td>1 п = 0,2172</td></tr>
+          <tr><td>Полпан</td><td>6,786</td><td>30</td><td class="price">7 560</td><td>1 п = 0,2036</td></tr>
+          <tr><td>Полпан</td><td>4,0716</td><td>50</td><td class="price">7 770</td><td>1 п = 0,2039</td></tr>
+          <tr><td>Пеноплэкс</td><td>11,09</td><td>20</td><td class="price">10 605</td><td>1 п = 0,2224</td></tr>
+          <tr><td>Пеноплэкс</td><td>6,93</td><td>30</td><td class="price">9 135</td><td>1 п = 0,208</td></tr>
+          <tr><td>Пеноплэкс</td><td>4,16</td><td>50</td><td class="price">9 030</td><td>1 п = 0,2082</td></tr>
+          <tr><td>Пенопласт</td><td>2</td><td>20</td><td class="price">788</td><td>1 л = 0,04</td></tr>
+          <tr><td>Пенопласт</td><td>2</td><td>30</td><td class="price">1 103</td><td>1 л = 0,06</td></tr>
+          <tr><td>Пенопласт</td><td>2</td><td>40</td><td class="price">1 460</td><td>1 л = 0,08</td></tr>
+          <tr><td>Пенопласт</td><td>2</td><td>50</td><td class="price">1 817</td><td>1 л = 0,1</td></tr>
+          <tr><td>Пенопласт</td><td>2</td><td>100</td><td class="price">3 528</td><td>1 л = 0,2</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="film">
+      <h2>Паро-гидроизоляционные плёнки и материалы</h2>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Квадратура</th><th>Ед. измер.</th><th>Цена</th><th>Розничная</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Новитекс ветро-влагозащитный В</td><td>50</td><td>Рулон</td><td class="price">2 310</td><td>2 400</td></tr>
+          <tr><td>Новитекс ветро-влагозащитный А</td><td>50</td><td>Рулон</td><td class="price">2 415</td><td>2 400</td></tr>
+          <tr><td>Юниспан паро-гидроизоляционный В</td><td>60</td><td>Рулон</td><td class="price">4 515</td><td>4 500</td></tr>
+          <tr><td>Юниспан ветро-влагозащитный А</td><td>60</td><td>Рулон</td><td class="price">5 565</td><td>5 500</td></tr>
+          <tr><td>Пароизоляционная плёнка Knauf GreenTerm B</td><td>60</td><td>Рулон</td><td class="price">10 500</td><td>10 200</td></tr>
+          <tr><td>Ветро-влагозащитная мембрана Knauf GreenTerm A</td><td>60</td><td>Рулон</td><td class="price">14 700</td><td>14 500</td></tr>
+          <tr><td>Подложка с фольгой 3 мм</td><td>50</td><td>Рулон</td><td class="price">4 095</td><td>4 000</td></tr>
+          <tr><td>Подложка без фольги 3 мм</td><td>58</td><td>Рулон</td><td class="price">3 675</td><td>3 700</td></tr>
+          <tr><td>Подложка с фольгой 5 мм</td><td>30</td><td>Рулон</td><td class="price">3 885</td><td>3 800</td></tr>
+          <tr><td>Подложка без фольги 5 мм</td><td>28</td><td>Рулон</td><td class="price">3 465</td><td>3 500</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="other">
+      <h2>ДСП, ДВП, OSB, гидроизоляция, цемент и сетка</h2>
+      <h3>ДСП / ДВП / OSB</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Размер</th><th>Толщина</th><th>Цена</th><th>В упаковке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ДСП (Россия)</td><td>2750×1830</td><td>16</td><td class="price">9 398</td><td>44</td></tr>
+          <tr><td>ДВП (Россия)</td><td>2750×1700</td><td>2,5</td><td class="price">2 310</td><td>180</td></tr>
+          <tr><td>OSB</td><td>2,50×1,25</td><td>5</td><td class="price">4 095</td><td>125</td></tr>
+          <tr><td>OSB</td><td>2,44×1,22</td><td>9</td><td class="price">4 988</td><td>96</td></tr>
+          <tr><td>OSB</td><td>2,50×1,25</td><td>9</td><td class="price">5 145</td><td>78</td></tr>
+          <tr><td>OSB</td><td>2,44×1,22</td><td>12</td><td class="price">6 353</td><td>72</td></tr>
+          <tr><td>OSB</td><td>2,50×1,25</td><td>12</td><td class="price">6 510</td><td>60</td></tr>
+          <tr><td>OSB</td><td>2440×1220</td><td>15</td><td class="price">7 718</td><td>58</td></tr>
+          <tr><td>OSB</td><td>2,50×1,250</td><td>15</td><td class="price">7 823</td><td>48</td></tr>
+          <tr><td>OSB</td><td>2,44×1,22</td><td>18</td><td class="price">9 135</td><td>48</td></tr>
+          <tr><td>OSB</td><td>2,50×1,25</td><td>18</td><td class="price">9 660</td><td>39</td></tr>
+          <tr><td>Фанера ламинированная UltraDecor</td><td>2,44×1,22</td><td>18</td><td class="price">16 590</td><td>39</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Гидроизоляционные материалы</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Квадратура</th><th>Цена</th><th>В паллетах</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Рубероид РПП 250</td><td>Рулон</td><td>15</td><td class="price">1 344</td><td>—</td></tr>
+          <tr><td>Рубероид РКП-300</td><td>Рулон</td><td>12</td><td class="price">2 205</td><td>—</td></tr>
+          <tr><td>Руберойд Россия КРЗ 300</td><td>Рулон</td><td>15</td><td class="price">2 783</td><td>—</td></tr>
+          <tr><td>Битум (мастика 30 кг)</td><td>меш</td><td>30 кг</td><td class="price">9 240</td><td>27</td></tr>
+          <tr><td>Мастика жидкая 22 кг</td><td>банка</td><td>22 кг</td><td class="price">15 435</td><td>36</td></tr>
+          <tr><td>Праймер битумный 19,5 кг</td><td>банка</td><td>24 л</td><td class="price">18 638</td><td>—</td></tr>
+          <tr><td>Бикрост ХПП</td><td>рулон</td><td>10</td><td class="price">11 498</td><td>—</td></tr>
+          <tr><td>Бикрост ХКП сланец серый</td><td>рулон</td><td>15</td><td class="price">13 466</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Цементы</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th><th>Цена за тонну</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Цемент Alacem 50 кг М-400</td><td>меш</td><td class="price">2 888</td><td>40</td><td>55 000</td></tr>
+          <tr><td>Цемент Alacem 50 кг М-500</td><td>меш</td><td class="price">3 098</td><td>40</td><td>59 000</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Сетка кладочная и малярная</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Размер</th><th>Квадратура</th><th>Цена</th><th>В упаковке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Сетка кладочная 10×10 (0,25)</td><td>1,8×0,65</td><td>1,3</td><td class="price">420</td><td>10</td></tr>
+          <tr><td>Сетка кладочная 15×15 (0,25)</td><td>1,8×0,66</td><td>1,3</td><td class="price">368</td><td>10</td></tr>
+          <tr><td>Сетка фасадная 125 г</td><td>50</td><td>50</td><td class="price">—</td><td>—</td></tr>
+          <tr><td>Сетка 75 г (красный)</td><td>5×5</td><td>50</td><td class="price">3 150</td><td>—</td></tr>
+          <tr><td>Сетка HAUSER интерьерная 60 г</td><td>2,5×2,5</td><td>50</td><td class="price">8 478</td><td>—</td></tr>
+          <tr><td>Сетка HAUSER 145 г</td><td>1×50</td><td>50</td><td class="price">10 091</td><td>—</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Теплоблок</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th><th>В паллетах</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Теплоблок 20×30×60</td><td>шт</td><td class="price">1 208</td><td>40</td></tr>
+          <tr><td>Теплоблок 10×30×60</td><td>шт</td><td class="price">529</td><td>80</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Подложка под ламинат и паркет</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>м² в упаковке</th><th>Цена</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Подложка гармошка 2 мм 10,5 м² JAMBYL PL</td><td>Упаковка</td><td>10,5</td><td class="price">2 310</td></tr>
+          <tr><td>Подложка гармошка 3 мм 10,5 м² JAMBYL PL</td><td>Упаковка</td><td>10,5</td><td class="price">2 573</td></tr>
+          <tr><td>Подложка гармошка 3 мм 5,25 м² JAMBYL PL</td><td>Упаковка</td><td>5,25</td><td class="price">1 365</td></tr>
+          <tr><td>Подложка гармошка перфорированная 1,8 мм JAMBYL PL</td><td>Упаковка</td><td>8,4</td><td class="price">1 995</td></tr>
+          <tr><td>Подложка-гармошка ламинированная с пароизоляцией 1000×500×2 мм</td><td>Упаковка</td><td>15</td><td class="price">5 775</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Ламинат KRONOSPAN</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Размер</th><th>Квадратура</th><th>Цена</th><th>В упаковке</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ламинат 32/8 Дуб Викинг светлый</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">6 479</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 32/8 Джари Лофт</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">6 479</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 32/8 Дуб Парящий К396</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">6 479</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 33/8 Дуб Абсолют классик U608</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">7 901</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 33/8 Дуб Битник K277NL</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">7 901</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 33/8 Дуб Деревенский 7876</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">7 901</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 33/8 Дуб Песочный С601</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">7 901</td><td>9 шт</td></tr>
+          <tr><td>Ламинат 33/8 Дуб Пьер EU85-К051</td><td>1285×192×8 мм</td><td>2,2205 м²</td><td class="price">7 901</td><td>9 шт</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Инструмент</h3>
+      <table>
+        <thead>
+          <tr><th>Наименование</th><th>Ед. измер.</th><th>Цена</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Лопата зимняя</td><td>шт</td><td class="price">1 260</td></tr>
+          <tr><td>Лопата чёрная</td><td>шт</td><td class="price">1 260</td></tr>
+          <tr><td>Лопата толкач (цветной)</td><td>шт</td><td class="price">2 100</td></tr>
+          <tr><td>Лопата (цветная)</td><td>шт</td><td class="price">1 470</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
